@@ -1,0 +1,46 @@
+architecture: arm64
+battery: {removable: False, capacity: 4850, tech: 'Li-Ion'}
+bluetooth: {spec: '4.2', profiles: [A2DP]}
+cameras:
+- {flash: 'LED (dual-tone)', info: '16 MP'}
+- {flash: '', info: '5 MP'}
+carrier:
+channels: [weekly]
+codename: hydrogen
+cpu: Cortex-A53 & Cortex-A72
+cpu_cores: '6'
+cpu_freq: 4 x 1.4 GHz & 2 x 1.8 GHz
+current_branch: 14.1
+depth: 7.5 mm (0.30 in)
+download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
+  Keep holding both buttons until the word "FASTBOOT" appears on the screen, then release.
+gpu: Adreno 510
+height: 173.1 mm (6.81 in)
+image: hydrogen.png
+install_method: fastboot_xiaomi
+kernel: android_kernel_xiaomi_msm8956
+maintainers: [TheStrix]
+name: Mi Max
+network:
+- {tech: 2G, bands: '850 900 1800 1900 MHz GSM, 800 1900 MHz CDMA' }
+- {tech: 3G, bands: '850 900 1900 2100 MHz HSDPA, CDMA2000 1xEV-DO TD-SCDMA' }
+- {tech: 4G, bands: '1(2100) 3(1800) 7(2600) 38(2600) 39(1900) 40(2300) 41(2500)' }
+peripherals: [Fingerprint reader, Accelerometer, Gyroscope, Proximity sensor, Compass, GPS, Infrared sensor, FM radio]
+ram: 3 GB
+recovery_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Power</kbd>.
+  Keep holding both buttons until the "MI" logo appears on the screen, then release.
+release: 2016-05
+screen: 163.5 mm (6.44 in)
+screen_ppi: '342'
+screen_res: 1080x1920
+screen_tech: IPS LCD
+sdcard: up to 256 GB (hybrid sim slot)
+soc: Qualcomm MSM8956 Snapdragon 650
+storage: 32/64 GB
+tree: android_device_xiaomi_hydrogen
+type: phone
+vendor: Xiaomi
+vendor_short: xiaomi
+versions: [14.1]
+width: 88.3 mm (3.48 in)
+wifi: 802.11 a/b/g/n/ac, Dual-band, Wi-Fi Direct, DLNA, Hotspot
