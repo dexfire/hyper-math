@@ -3,12 +3,12 @@
 topnav:
 - title: Topnav
   items:
-    - title: Devices
+    - title: 主页
       url: devices/
-    - title: Contribute
+    - title: 目录
       url: contributing.html
-    - title: Developers
+    - title: 参与
       url: developer_information.html
-    - title: Website
+    - title: 更多..
       external_url: http://www.lineageos.org/
 
