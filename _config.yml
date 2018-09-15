@@ -2,13 +2,13 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: LineageOS Wiki
+topnav_title: Hyper-Math 高数学习手册
 # this appears on the top navigation bar next to the home button
 
-title: LineageOS Wiki
+title: Hyper-Math 高数学习手册
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: The LineageOS Project
+company_name: The Hyper-Math Project
 # this appears in the footer
 
 host: 127.0.0.1
@@ -76,7 +76,7 @@ defaults:
 sidebars:
 - home_sidebar
 
-description: "The LineageOS Wiki"
+description: "Hyper-Math 高数学习手册"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
