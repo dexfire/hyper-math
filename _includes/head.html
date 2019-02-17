@@ -14,22 +14,62 @@
 <meta name="msapplication-config" content="{{ "images/favicons/browserconfig.xml" | relative_url }}">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- 代码语法高亮 -->
+<link rel="stylesheet" href="{{ "pygments/native.css" | relative_url }}">
+
+<!-- Katex -->
+<link rel="stylesheet" href="{{ "/static/katex/katex.min.css" | relative_url }}">
+<script defer src="{{ "/static/katex/katex.min.js" | relative_url }}"></script>
+<!-- <script>
+    $("script[type='math/tex']").replaceWith(function() {
+        var tex = $(this).text();
+        return katex.renderToString(tex, {displayMode: false});
+    });
+  
+    $("script[type='math/tex; mode=display']").replaceWith(function() {
+        var tex = $(this).html();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    });
+</script> -->
+
+<script>
+    renderMathInElement(document.body,
+   {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "$", right: "$", display: false}
+              ]
+          }
+  );
+</script>
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous"> -->
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            // ...options...
+        });
+    });
+</script>
+
+<link rel="stylesheet" href="{{ "css/bootstrap.337.min.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "css/material-kit.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "css/customstyles.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "css/style.css" | relative_url }}">
 <link rel="stylesheet" href="{{ "css/syntax.css" | relative_url }}">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{{ "css/roboto.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/static/font-awesome/css/fontawesome.min.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "css/material_icon.css" | relative_url }}">
+<!-- JQuery Bootstrap -->
+<script src="{{ "js/jquery.min.js" | relative_url }}"></script>
+<script src="{{ "static/bootstrap/js/bootstrap.min.js" | relative_url }}"></script>
 <script src="{{ "js/material.min.js" | relative_url }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js" integrity="sha256-WofcoLT8gToeaSmVRe28qpnlFxdBJH1n4K6Bk3YowvU=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script src="{{ "js/jquery.cookie.min.js" | relative_url }}"></script>
+<script src="{{ "js/anchor.min.js" | relative_url }}"></script>
+<script src="{{ "js/jquery.easing.min.js" | relative_url }}"></script>
 <script src="{{ "js/jquery.navgoco.min.js" | relative_url }}"></script>
 <script src="{{ "js/toc.js" | relative_url }}"></script>
 <script src="{{ "js/customscripts.js" | relative_url }}"></script>
